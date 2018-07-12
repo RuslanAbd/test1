@@ -6,18 +6,34 @@ using System.Threading.Tasks;
 
 namespace lab1
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Predator : Animal
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public string Type;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="weight"></param>
+        /// <param name="type"></param>
         public Predator(int id, int weight, string type):base(id,weight)
         {
             this.Type = type;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public override void Print()
         {
             base.Print();
-            Console.WriteLine(Type);
+            
+            string formattedString = string.Format("Тип: {0}, ", Type);
+            Console.Write(formattedString);
         }
     }
 }

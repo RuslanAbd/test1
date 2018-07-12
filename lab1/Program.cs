@@ -6,30 +6,17 @@ using System.Threading.Tasks;
 
 namespace lab1
 {
-    class Animal {
-        public int Id { get; set; }
-        public int Weight { get; set; }
-        public string Type { get; set; }
-        public int Count { get; set; }
+   
 
-        public Animal(int id, int weight) {
-            Id = id;
-            Weight = weight;
-
-        }
-
-        public virtual void Print()
-        {
-            Console.WriteLine(Id);
-            Console.WriteLine(Weight);
-
-        }
-        
-    }
-
-    
+    /// <summary>
+    /// 
+    /// </summary>
     class MainClass
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             List<Animal> animals = new List<Animal>();
