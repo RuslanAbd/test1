@@ -32,9 +32,8 @@ namespace lab1
         public override void Print()
         {
             base.Print();
-            
-            string formattedString = string.Format("Количество: {0}", Count);
-            Console.Write(formattedString);
+
+            Console.Write($"Количество: {Count}");
         }
     }
 }

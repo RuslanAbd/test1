@@ -24,7 +24,7 @@ namespace lab1
         /// <param name="count"></param>
         public Wolf(int id, int weight, string type, int count) : base(id, weight, type)
         {
-            this.Count = count; 
+            this.Count = count;
         }
         /// <summary>
         /// 
@@ -32,9 +32,8 @@ namespace lab1
         public override void Print()
         {
             base.Print();
-            
-            string formattedString = string.Format("Количество: {0}", Count);
-            Console.Write(formattedString);
+
+            Console.Write($"Количество: {Count} ");
         }
     }
 }

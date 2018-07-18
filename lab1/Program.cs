@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab1
 {
-   
+
 
     /// <summary>
     /// 
@@ -24,7 +24,8 @@ namespace lab1
             animals.Add(new Fox(2, 30, "Песец", 10));
             animals.Add(new Wolf(3, 100, "Волк", 7));
 
-            foreach (Animal animal in animals) {               
+            foreach (Animal animal in animals)
+            {
                 animal.Print();
                 Console.WriteLine();
             }

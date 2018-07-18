@@ -21,7 +21,7 @@ namespace lab1
         /// <param name="id"></param>
         /// <param name="weight"></param>
         /// <param name="type"></param>
-        public Predator(int id, int weight, string type):base(id,weight)
+        public Predator(int id, int weight, string type) : base(id, weight)
         {
             this.Type = type;
         }
@@ -31,9 +31,7 @@ namespace lab1
         public override void Print()
         {
             base.Print();
-            
-            string formattedString = string.Format("Тип: {0}, ", Type);
-            Console.Write(formattedString);
+            Console.Write($"Тип: {Type}, ");
         }
     }
 }
